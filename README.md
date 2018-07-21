@@ -1,6 +1,6 @@
-# React-truffle-metamask
+# CryptoSoccer
 
-This project is design to connect to Ethereum blockchain and interact with MetaMask to send transaction on smart contract.  
+Work in Progress.  
 
 ## 💡[Document](./DOCUMENT.md)
 
@@ -20,7 +20,8 @@ This project is design to connect to Ethereum blockchain and interact with MetaM
 - [Truffle](./TRUFFLE.md)
 
 #### Database
-- [Bluzelle](./BLUZELLE.md)
+- [Bluzelle](./BLUZELLE.md) 
+- IPFS (Coming Soon)
 
 ### Install flow
 
@@ -63,6 +64,6 @@ yarn start
 ```
 
 ## Reference
-
+- react-truffle-metamask https://github.com/PhyrexTsai/react-truffle-metamask
 - ganache-cli: https://github.com/trufflesuite/ganache-cli
 - truffle: https://github.com/trufflesuite/truffle
