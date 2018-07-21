@@ -5,9 +5,11 @@ import './index.css';
 import AppContainer from './container/AppContainer';
 import configureStore from './store/configureStore';
 import registerServiceWorker from './registerServiceWorker';
+import {LandingPage} from "./components/LandingPage/LandingPage";
 
 const store = configureStore();
 
-ReactDOM.render(<Provider store={store}><AppContainer /></Provider>, 
-  document.getElementById('root'));
+ReactDOM.render(<Provider store={store}><AppContainer /></Provider>,
+// ReactDOM.render(<Provider store={store}><LandingPage /></Provider>,
+    document.getElementById('root'));
 registerServiceWorker();

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "author": "PhyrexTsai",
   "engines": {
-    "node": "8.x.x",
+    "node": "9.x.x",
     "npm": "5.x.x",
     "yarn": "1.x.x"
   },
