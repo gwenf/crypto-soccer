@@ -1,7 +1,5 @@
-var SoccerCoin = artifacts.require("SoccerCoin.sol");
+var SoccerCoin = artifacts.require("Item.sol");
 
 module.exports = function(deployer) {
-  // are we going to need to link any of the libraries?
-  // deployer.link(ConvertLib, MetaCoin);
-  deployer.deploy(SoccerCoin);
+  deployer.deploy(Item);
 };
