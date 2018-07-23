@@ -6,4 +6,7 @@ export const Health = (props) => (
     <p>{props.health}</p>
     <button onClick={() => props.handleHealth()}>Health</button>
   </div>
-); 
+);
+
+
+export default Health;

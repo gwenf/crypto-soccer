@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="32px" viewBox="0 0 17 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow Right 32px</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Headers" transform="translate(-1320.000000, -5550.000000)" fill="#3FA2F7">
+            <g id="Header-#7" transform="translate(0.000000, 4906.000000)">
+                <g id="Icons-/-Arrows-/-Arrow-Right-32px" transform="translate(1320.000000, 644.000000)">
+                    <path d="M14.9473528,31.6432696 L0.34560209,16.8432696 C-0.115200697,16.3762696 -0.115200697,15.6242696 0.34560209,15.1572696 L14.9473528,0.35726959 C15.4131535,-0.11573041 16.1728284,-0.11873041 16.6436269,0.34626959 C17.1144254,0.81226959 17.1194232,1.57126959 16.6546222,2.04326959 L2.88551506,16.0002696 L16.6546222,29.9572696 C17.1194232,30.4292696 17.1144254,31.1882696 16.6436269,31.6542696 C16.409727,31.8852696 16.105857,32.0002696 15.8009875,32.0002696 C15.4911201,32.0002696 15.1822523,31.8812696 14.9473528,31.6432696 Z" id="Icon" transform="translate(8.500000, 16.000135) scale(-1, 1) translate(-8.500000, -16.000135) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

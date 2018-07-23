@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="18px" viewBox="0 0 25 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Footers" transform="translate(-150.000000, -1926.000000)">
+            <g id="Footer-#10" transform="translate(0.000000, 1589.000000)">
+                <g id="Icon" transform="translate(150.000000, 337.000000)">
+                    <rect id="Shape" fill="#E4F1FD" x="0" y="6" width="25" height="6"></rect>
+                    <path d="M0,12 L25,12 L25,17.009222 C25,17.5564136 24.5447371,18 24.004543,18 L0.995457033,18 C0.445681294,18 0,17.5490248 0,17.009222 L0,12 Z" id="Shape" fill="#3FA2F7"></path>
+                    <path d="M0,0.990777969 C0,0.443586406 0.455262884,0 0.995457033,0 L24.004543,0 C24.5543187,0 25,0.45097518 25,0.990777969 L25,6 L0,6 L0,0.990777969 Z" id="Shape" fill="#297FCA"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

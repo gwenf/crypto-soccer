@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="45" cy="45" r="45"></circle>
+    </defs>
+    <g id="Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Team" transform="translate(-1115.000000, -3766.000000)">
+            <g id="Team-#4" transform="translate(0.000000, 3353.000000)">
+                <g id="Join" transform="translate(1111.000000, 413.000000)">
+                    <g id="Icon" transform="translate(4.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Background" fill="#3FA2F7" xlink:href="#path-1"></use>
+                        <path d="M47,44 L47,30 L44,30 L44,44 L30,44 L30,47 L44,47 L44,60 L47,60 L47,47 L60,47 L60,44 L47,44 Z" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
