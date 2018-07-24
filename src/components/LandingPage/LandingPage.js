@@ -1,4 +1,5 @@
 import React from 'react';
+import CodeEditor from "../CodeEditor/CodeEditor";
 import Health from "../Health";
 import AppContainer from "../../container/AppContainer";
 import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
@@ -21,6 +22,7 @@ export const LandingPage = () => (
                 <Switch>
                     <Route path="/metamask-utilities" component={AppContainer}/>
                     <Route path="/health" component={Health}/>
+                    <Route path="/start-learning" component={CodeEditor}/>
                 </Switch>
             </Router>
         </Provider>
@@ -38,7 +40,7 @@ export const LandingPage = () => (
                             <nav className={"navbar d-none d-lg-block"}>
                                 <a href="metamask-utilities">Metamask Utilities</a>
                                 <a href="health">Health</a>
-                                <a className={"btn btn-small"}>Button</a>
+                                <a className={"btn btn-small"} href="start-learning">Go to Lessons</a>
                             </nav>
                         </div>
                         {/*<div>*/}
