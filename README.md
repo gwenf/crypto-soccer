@@ -28,7 +28,7 @@ Work in Progress.
 #### Clone repo
 
 ```
-git clone https://github.com/PhyrexTsai/react-truffle-metamask
+git clone https://github.com/gwenf/crypto-soccer
 cd react-truffle-metamask
 ```
 
