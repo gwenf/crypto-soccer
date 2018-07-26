@@ -21,7 +21,8 @@ Work in Progress.
 
 #### Database
 - [Bluzelle](./BLUZELLE.md) 
-- IPFS (Coming Soon)
+- IPFS Infura (https://infura.io/) npm package ipfs-api
+
 
 ### Install flow
 
