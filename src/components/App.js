@@ -3,6 +3,7 @@ import {MetaMask} from './MetaMask/MetaMask';
 import {Health} from './Health';
 import Contract from './Contract';
 import SendTransactoin from './SendTransaction';
+import ipfs from './ipfs';
 import {Warning} from './Warning/Warning';
 import {Top} from './Top/Top';
 import './App.css';
