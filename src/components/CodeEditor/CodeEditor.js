@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { render } from 'react-dom';
 import MonacoEditor from 'react-monaco-editor';
 import { SOLIDITY_FORMAT, SOLIDITY_THEME } from './solidity';
+import {LessonTextRenderer} from "../LessonTextRenderer/LessonTextRenderer";
 
 
 class CodeEditor extends React.Component {
@@ -10,7 +11,7 @@ class CodeEditor extends React.Component {
         super(props);
         this.state = {
             code: '' +
-            '// type your code...' +
+            '// type your code...\n' +
             'pragma solidity ^0.4.24;\n' +
             '\n' +
             'import \'./SoccerCoin.sol\';\n' +
@@ -53,26 +54,24 @@ class CodeEditor extends React.Component {
             roundedSelection: false,
             readOnly: false,
             cursorStyle: 'line',
-            automaticLayout: true
+            automaticLayout: false
         };
         return (
-            <div>
-                <div style={{ float:"left" }}>
-                    Text here.
+                <div>
+                    <LessonTextRenderer/>
+                    <MonacoEditor
+                        width="800"
+                        height="600"
+                        language="sol"
+                        theme="vs-dark"
+                        value={code}
+                        options={options}
+                        onChange={this.onChange}
+                        editorDidMount={this.editorDidMount}
+                        editorWillMount={this.editorWillMount}
+                    />
                 </div>
-                <MonacoEditor
-                    width="800"
-                    height="600"
-                    language="sol"
-                    theme="vs-dark"
-                    value={code}
-                    options={options}
-                    onChange={this.onChange}
-                    editorDidMount={this.editorDidMount}
-                    editorWillMount={this.editorWillMount}
-                />
-            </div>
-        );
+            );
     }
 }
 
