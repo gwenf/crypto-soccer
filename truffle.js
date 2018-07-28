@@ -6,12 +6,13 @@ module.exports = {
   networks: {
     development: {
       host: "localhost",
-      port: 8545,
+      port: 7545,
       network_id: "*" // Match any network id
     },
     ropsten: {
       provider: new HDWalletProvider(mnemonic, "https://ropsten.infura.io/"),
-      network_id: 3 // official id of the ropsten network
+      gas: 1828127,
+      network_id: 3 // official id of the ropsten network=
     }
   }
 };

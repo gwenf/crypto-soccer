@@ -4,7 +4,7 @@ import 'openzeppelin-solidity/contracts/ownership/Ownable.sol';
 import 'openzeppelin-solidity/contracts/math/SafeMath.sol';
 import 'openzeppelin-solidity/contracts/token/ERC721/ERC721Token.sol';
 
-contract SoccerCoin is Ownable, SafeMath, ERC721Token {
+contract SoccerCoin is Ownable, ERC721Token {
   string public constant name = "SoccerCoin";
   string public constant symbol = "SCR";
 
@@ -37,10 +37,10 @@ contract SoccerCoin is Ownable, SafeMath, ERC721Token {
     return playerToUser[_tokenId];
   }
 
-  function newPlayer(string _name) public returns(uint) {
-    require(!userToPlayers[_to]);
+  function newPlayer(string _name) public {
+    require(userToPlayers[msg.sender].length != 0);
 
-    createPlayer(_name, _to);
+    createPlayer(_name, msg.sender, 11111111);
   }
 
   function createPlayer(string _name, address _to, uint _dna) internal {
@@ -62,20 +62,20 @@ contract SoccerCoin is Ownable, SafeMath, ERC721Token {
     require(_to != address(0));
     
     playerToUser[_tokenId] = _to;
-    _transfer(msg.sender, _to, _tokenId);
+    transferFrom(msg.sender, _to, _tokenId);
   }
 
   function approve(address _to, uint _tokenId) public onlyOwnerOf(_tokenId) {
     require(_to != address(0));
 
     playerToApproved[_tokenId] = _to;
-    Approval(msg.sender, _to, _tokenId);
+    emit Approval(msg.sender, _to, _tokenId);
   }
 
   function takeOwnership(uint _tokenId) public {
     require(playerToApproved[_tokenId] == msg.sender);
     address owner = ownerOf(_tokenId);
-    _transfer(owner, msg.sender, _tokenId);
+    transferFrom(owner, msg.sender, _tokenId);
   }
 
 }
