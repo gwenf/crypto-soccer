@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 import { render } from 'react-dom';
 import MonacoEditor from 'react-monaco-editor';
 import { SOLIDITY_FORMAT, SOLIDITY_THEME } from './solidity';
-import {LessonTextRenderer} from "../LessonTextRenderer/LessonTextRenderer";
-
+import { LessonTextRenderer } from "../LessonTextRenderer/LessonTextRenderer";
 
 class CodeEditor extends React.Component {
     constructor(props) {
