@@ -1,10 +1,4 @@
 import React from 'react';
-import CodeEditor from "../CodeEditor/CodeEditor";
-import Health from "../Health";
-import AppContainer from "../../container/AppContainer";
-import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
-import { Provider } from 'react-redux';
-import configureStore from '../../store/configureStore';
 
 // Images
 import mainLogo from "./img/logos/logo.svg";
@@ -13,20 +7,8 @@ import burgerIcon from "./img/icons/burger.svg";
 // Extremely Simple Landing Page Component created ignoring best practices
 // and keeping laziness alone in mind :P
 
-const store = configureStore();
-
 export const LandingPage = () => (
     <div>
-        <Provider store={store}>
-            <Router>
-                <Switch>
-                    <Route path="/metamask-utilities" component={AppContainer}/>
-                    <Route path="/health" component={Health}/>
-                    <Route path="/start-learning" component={CodeEditor}/>
-                </Switch>
-            </Router>
-        </Provider>
-
         <section className={"headers bg-light bg-devices"} id="headers-14">
             <div className={"ph-15 ph-sm-30 ph-lg-70 p-40"}>
                 <div className={"row justify-content-between align-items-center"}>
@@ -38,9 +20,10 @@ export const LandingPage = () => (
                     <div className={"col float-right"} style={{ float:"right", zIndex:1035 }}>
                         <div>
                             <nav className={"navbar d-none d-lg-block"}>
-                                <a href="metamask-utilities">Metamask Utilities</a>
-                                <a href="health">Health</a>
-                                <a className={"btn btn-small"} href="start-learning">Go to Lessons</a>
+                                <a href="/metamask-utilities">Metamask Utilities</a>
+                                <a href="/health">Health</a>
+                                <a href="/register">Register</a>
+                                <a className={"btn btn-small"} href="/start-learning">Go to Lessons</a>
                             </nav>
                         </div>
                         {/*<div>*/}
