@@ -4,9 +4,7 @@ import { Provider } from 'react-redux';
 import configureStore from '../../store/configureStore';
 
 import NavBar from './NavBar';
-import AppContainer from "../../container/AppContainer";
 import CodeEditor from "../CodeEditor/CodeEditor";
-import Health from "../Health";
 import Register from '../register/RegisterContainer';
 import LandingPage from './LandingPage';
 
@@ -20,8 +18,6 @@ export const RouterComponent = () => (
             <Router>
                 <Switch>
                     <Route path="/" component={LandingPage} exact />
-                    <Route path="/metamask-utilities" component={AppContainer} />
-                    <Route path="/health" component={Health} />
                     <Route path="/register" component={Register} />
                     <Route path="/start-learning" component={CodeEditor} />
                 </Switch>

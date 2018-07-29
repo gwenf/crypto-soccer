@@ -17,8 +17,6 @@ export const NavBar = () => (
         <div>
             <div>
                 <nav className="navbar d-none d-lg-block">
-                    <a href="/metamask-utilities">Metamask Utilities</a>
-                    <a href="/health">Health</a>
                     <a href="/register">Register</a>
                     <a className={"btn btn-small"} href="/start-learning">Go to Lessons</a>
                 </nav>
