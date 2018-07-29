@@ -58,7 +58,9 @@ class CodeEditor extends React.Component {
         };
         return (
                 <div>
-                    <LessonTextRenderer/>
+                    <LessonTextRenderer
+                        lessonName={"HelloWorld"}
+                    />
                     <MonacoEditor
                         width="800"
                         height="600"

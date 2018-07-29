@@ -13,9 +13,17 @@ import {
     Typography
 } from "material-ui";
 
-
+// This should probably be in a file
 let lessons = {
+    "HelloWorld": {
+        title: "Shrimp and Chorizo Paella",
+        subheader: "September 14, 2016",
+        image: "/static/images/cards/paella.jpg",
+        cardHeaderTitle: "Contemplative Reptile",
+        cardContentTypography: "This impressive paella is a perfect party dish and a fun meal to cook together with\n" +
+        "                        your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
 
+    }
 };
 
 this.fetchLessonText = (lessonName) => {
@@ -30,7 +38,7 @@ export const LessonTextRenderer = (props) => (
             {/*</p>*/}
         {/*</section>*/}
         {/*<div style={{float:"right", width:"480px"}}>*/}
-        <div style={{float: "right", width: window.visualViewport.width * 0.30, height: '100%'}}>
+        <div style={{float: "right", width: window.visualViewport.width * 0.30, overflow: 'hidden'}}>
             <Card>
                 <CardHeader
                     avatar={
@@ -43,27 +51,18 @@ export const LessonTextRenderer = (props) => (
 
                         </IconButton>
                     }
-                    title="Shrimp and Chorizo Paella"
-                    subheader="September 14, 2016"
+                    title={lessons[props.lessonName].title}
+                    subheader={lessons[props.lessonName].subheader}
                 />
                 <CardMedia
-                    image="/static/images/cards/paella.jpg"
-                    title="Contemplative Reptile"
+                    image={lessons[props.lessonName].image}
+                    title={lessons[props.lessonName].cardHeaderTitle}
                 />
                 <CardContent>
                     <Typography component="p">
-                        This impressive paella is a perfect party dish and a fun meal to cook together with
-                        your guests. Add 1 cup of frozen peas along with the mussels, if you like.
+                        {lessons[props.lessonName].cardContentTypography}
                     </Typography>
                 </CardContent>
-                <CardActions disableActionSpacing>
-                    <IconButton aria-label="Add to favorites">
-
-                    </IconButton>
-                    <IconButton aria-label="Share">
-
-                    </IconButton>
-                </CardActions>
                 <withWidth>
                     <CardContent>
                         <Typography paragraph variant="body2">
@@ -80,13 +79,6 @@ export const LessonTextRenderer = (props) => (
                             chicken and chorizo in the pan. Add pimentón, bay leaves, garlic, tomatoes, onion,
                             salt and pepper, and cook, stirring often until thickened and fragrant, about 10
                             minutes. Add saffron broth and remaining 4 1/2 cups chicken broth; bring to a boil.
-                        </Typography>
-                        <Typography paragraph>
-                            Add rice and stir very gently to distribute. Top with artichokes and peppers, and
-                            cook without stirring, until most of the liquid is absorbed, 15 to 18 minutes.
-                            Reduce heat to medium-low, add reserved shrimp and mussels, tucking them down into
-                            the rice, and cook again without stirring, until mussels have opened and rice is
-                            just tender, 5 to 7 minutes more. (Discard any mussels that don’t open.)
                         </Typography>
                         <Typography>
                             Set aside off of the heat to let rest for 10 minutes, and then serve.
