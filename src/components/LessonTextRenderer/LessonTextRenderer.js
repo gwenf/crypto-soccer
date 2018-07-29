@@ -13,7 +13,7 @@ import {
     Typography
 } from "material-ui";
 
-// This should probably be in a file
+// TODO: This should probably be in a file and imported
 let lessons = {
     "HelloWorld": {
         title: "Shrimp and Chorizo Paella",
@@ -22,6 +22,7 @@ let lessons = {
         cardHeaderTitle: "Contemplative Reptile",
         cardContentTypography: "This impressive paella is a perfect party dish and a fun meal to cook together with\n" +
         "                        your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
+        cardContentTypographyTitle: "Method:",
 
     }
 };
@@ -38,7 +39,7 @@ export const LessonTextRenderer = (props) => (
             {/*</p>*/}
         {/*</section>*/}
         {/*<div style={{float:"right", width:"480px"}}>*/}
-        <div style={{float: "right", width: window.visualViewport.width * 0.30, overflow: 'hidden'}}>
+        <div style={{float: "right", width: window.visualViewport.width * 0.37, overflow: 'hidden'}}>
             <Card>
                 <CardHeader
                     avatar={
@@ -66,7 +67,7 @@ export const LessonTextRenderer = (props) => (
                 <withWidth>
                     <CardContent>
                         <Typography paragraph variant="body2">
-                            Method:
+
                         </Typography>
                         <Typography paragraph>
                             Heat 1/2 cup of the broth in a pot until simmering, add saffron and set aside for 10

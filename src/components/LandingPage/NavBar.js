@@ -5,12 +5,14 @@ import mainLogo from "./img/logos/logo.svg";
 import burgerIcon from "./img/icons/burger.svg";
 
 export const NavBar = () => (
-    <div style={{display: 'flex', justifyContent: 'space-between', backgroundColor: '#e4f1fd', padding: '20px'}}>
+    <div style={{display: 'flex', justifyContent: 'space-between', backgroundColor: '#e4f1fd', padding: '20px',
+    marginBottom: '2px'}}>
         <div>
             <a href="/">
-                <img src={mainLogo} alt="logo" />
+                {/*<img src={mainLogo} alt="logo" />*/}
+                <h2 style={{fontWeight: "bold", float:"left"}} className={""}>Crypto</h2>
+                <h2 style={{float:"left"}}>Soccer</h2>
             </a>
-            {/*<h2 className={""}>CryptoSoccer</h2>*/}
         </div>
         <div>
             <div>
