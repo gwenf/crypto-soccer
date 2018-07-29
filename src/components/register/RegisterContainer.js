@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 
+import RegisterForm from './RegisterForm';
+
+import './register.css';
+
 class RegisterContainer extends Component {
   constructor(props) {
     super(props);
@@ -16,7 +20,7 @@ class RegisterContainer extends Component {
   render() {
     return (
       <div className="register-container">
-        Register Here
+        <RegisterForm />
       </div>
     );
   }
