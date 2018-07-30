@@ -37,13 +37,20 @@ class RegisterContainer extends Component {
   }
 
   handleChange(e) {
-
+    this.setState({
+      username: e.target.value
+    });
   }
 
   render() {
+    const { username } = this.state;
     return (
       <div className="register-container">
-        <RegisterForm handleChange={this.handleChange} handleSubmit={this.handleSubmit} />
+        <RegisterForm
+          handleChange={this.handleChange}
+          handleSubmit={this.handleSubmit}
+          username={username}
+        />
       </div>
     );
   }
