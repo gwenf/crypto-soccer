@@ -4,19 +4,18 @@ import React from 'react';
 // and keeping laziness alone in mind :P
 
 export const LandingPage = () => (
-    <div style={{width: "900px"}}>
+    <div style={{width: "900px", margin: "0 auto"}}>
         <div className="container text-center text-lg-left pt-30 pt-lg-120 pb-60 pb-lg-190">
             <div className="row justify-content-center justify-content-lg-start">
                 <div className="col-12 col-sm-8 col-lg-6">
-                    <h1>Wireframe connects the</h1>
-                    <h1>conceptual structure</h1>
+                    <h1>Learn to build your own</h1>
+                    <h1>blockchain based game</h1>
                     <br />
-                    <h4>Far far away, behind the word mountains, far from the</h4>
-                    <h4>    countries Vokalia and Consonantia, there live the blind texts</h4>
-                    <h4>    away</h4>
+                    <h4>The world simply does not have enough Soccer (or Football)</h4>
+                    <h4>based games. Learn the basics of Solidity and building Dapps</h4>
+                    <h4>by building a Crypto Soccer Game.</h4>
                     <br />
-                    <button className="btn"><span>Button</span>
-                    </button>
+                    <a href="/start-learning"><button className="btn"><span>Go to Lessons</span></button></a>
                 </div>
             </div>
         </div>
