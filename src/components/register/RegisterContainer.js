@@ -14,10 +14,11 @@ class RegisterContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      web3: null,
+      username: '',
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   handleSubmit(e) {
@@ -35,10 +36,14 @@ class RegisterContainer extends Component {
     })
   }
 
+  handleChange(e) {
+
+  }
+
   render() {
     return (
       <div className="register-container">
-        <RegisterForm handleSubmit={this.handleSubmit} />
+        <RegisterForm handleChange={this.handleChange} handleSubmit={this.handleSubmit} />
       </div>
     );
   }
