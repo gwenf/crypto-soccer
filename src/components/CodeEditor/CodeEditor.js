@@ -64,7 +64,7 @@ class CodeEditor extends React.Component {
                         width="800"
                         height="600"
                         language="sol"
-                        theme="vs-dark"
+                        theme="vs-light"
                         value={code}
                         options={options}
                         onChange={this.onChange}
