@@ -7,6 +7,7 @@ import NavBar from './NavBar';
 import CodeEditor from "../CodeEditor/CodeEditor";
 import Register from '../register/RegisterContainer';
 import LandingPage from './LandingPage';
+import Footer from './Footer';
 
 const store = configureStore();
 
@@ -23,6 +24,8 @@ export const RouterComponent = () => (
                 </Switch>
             </Router>
         </Provider>
+
+        <Footer />
     </div>
 );
 

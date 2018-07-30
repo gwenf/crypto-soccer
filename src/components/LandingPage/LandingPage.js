@@ -4,7 +4,7 @@ import React from 'react';
 // and keeping laziness alone in mind :P
 
 export const LandingPage = () => (
-    <div>
+    <div style={{width: "900px"}}>
         <div className="container text-center text-lg-left pt-30 pt-lg-120 pb-60 pb-lg-190">
             <div className="row justify-content-center justify-content-lg-start">
                 <div className="col-12 col-sm-8 col-lg-6">
